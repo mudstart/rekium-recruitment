@@ -10,20 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_31_193101) do
+ActiveRecord::Schema.define(version: 2021_03_31_230455) do
 
-  create_table "reclutamientos", force: :cascade do |t|
+  create_table "recruitments", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
+    t.string "discordID"
     t.string "status"
-    t.string "discordId"
-    t.string "nacionalidad"
+    t.date "ingreso"
     t.date "birthdate"
     t.string "email"
     t.string "phone_number"
-    t.date "ingreso"
-    t.text "notas"
+    t.string "country"
+    t.string "alter1"
+    t.string "alter2"
+    t.string "alter3"
+    t.string "alter4"
+    t.string "alter5"
     t.string "image"
+    t.text "note"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

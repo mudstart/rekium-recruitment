@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  discordID: MyString
+  status: MyString
+  ingreso: 2021-03-31
+  birthdate: 2021-03-31
+  email: MyString
+  phone_number: MyString
+  country: MyString
+  alter1: MyString
+  alter2: MyString
+  alter3: MyString
+  alter4: MyString
+  alter5: MyString
+  image: MyString
+  note: MyText
+
+two:
+  first_name: MyString
+  last_name: MyString
+  discordID: MyString
+  status: MyString
+  ingreso: 2021-03-31
+  birthdate: 2021-03-31
+  email: MyString
+  phone_number: MyString
+  country: MyString
+  alter1: MyString
+  alter2: MyString
+  alter3: MyString
+  alter4: MyString
+  alter5: MyString
+  image: MyString
+  note: MyText

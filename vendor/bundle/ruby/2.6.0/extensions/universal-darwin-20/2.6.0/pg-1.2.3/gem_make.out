@@ -1,5 +1,5 @@
 current directory: /Users/mudstart/Repository/rekium-recruitment/vendor/bundle/ruby/2.6.0/gems/pg-1.2.3/ext
-/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20210331-71992-kzpsm2.rb extconf.rb
+/System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/bin/ruby -I /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib/ruby/2.6.0 -r ./siteconf20210331-7329-vc1bqd.rb extconf.rb
 checking for pg_config... yes
 Using config values from /usr/local/bin/pg_config
 checking for libpq-fe.h... yes
@@ -50,28 +50,28 @@ linking shared-object pg_ext.bundle
 ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.2.Internal.sdk/usr/local/lib'
 ld: warning: ignoring file gvl_wrappers.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file pg.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_binary_encoder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file pg_binary_decoder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file pg_binary_encoder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file pg_connection.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_copy_coder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file pg_coder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_errors.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file pg_copy_coder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file pg_record_coder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_text_encoder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_text_decoder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file pg_errors.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file pg_result.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file pg_text_decoder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file pg_text_encoder.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file pg_tuple.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file pg_type_map.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_type_map_all_strings.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_type_map_by_class.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_type_map_by_mri_type.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_type_map_by_oid.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
-ld: warning: ignoring file pg_type_map_in_ruby.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file pg_type_map_all_strings.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64ld: warning: ignoring file pg_type_map_by_class.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+
 ld: warning: ignoring file pg_type_map_by_column.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file pg_type_map_by_oid.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file pg_type_map_by_mri_type.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
+ld: warning: ignoring file pg_type_map_in_ruby.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file pg_util.o, building for macOS-arm64e but attempting to link with file built for unknown-x86_64
 ld: warning: ignoring file /usr/local/lib/libpq.dylib, building for macOS-arm64e but attempting to link with file built for macOS-x86_64
 ld: warning: directory not found for option '-L/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.2.Internal.sdk/usr/local/lib'
 
 current directory: /Users/mudstart/Repository/rekium-recruitment/vendor/bundle/ruby/2.6.0/gems/pg-1.2.3/ext
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20210331-71992-9ssexs
+/usr/bin/install -c -m 0755 pg_ext.bundle ./.gem.20210331-7329-1q2pkli

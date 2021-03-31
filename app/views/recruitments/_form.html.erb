@@ -1,0 +1,97 @@
+<%= form_with(model: recruitment) do |form| %>
+  <% if recruitment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(recruitment.errors.count, "error") %> prohibited this recruitment from being saved:</h2>
+
+      <ul>
+        <% recruitment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :discordID %>
+    <%= form.text_field :discordID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ingreso %>
+    <%= form.date_select :ingreso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthdate %>
+    <%= form.date_select :birthdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alter1 %>
+    <%= form.text_field :alter1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alter2 %>
+    <%= form.text_field :alter2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alter3 %>
+    <%= form.text_field :alter3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alter4 %>
+    <%= form.text_field :alter4 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alter5 %>
+    <%= form.text_field :alter5 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :note %>
+    <%= form.text_area :note %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

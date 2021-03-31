@@ -1,0 +1,2 @@
+class Reclutamiento < ApplicationRecord
+end

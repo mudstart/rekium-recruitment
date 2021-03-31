@@ -1,0 +1,72 @@
+<%= form_with(model: reclutamiento) do |form| %>
+  <% if reclutamiento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(reclutamiento.errors.count, "error") %> prohibited this reclutamiento from being saved:</h2>
+
+      <ul>
+        <% reclutamiento.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :discordId %>
+    <%= form.text_field :discordId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nacionalidad %>
+    <%= form.text_field :nacionalidad %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birthdate %>
+    <%= form.date_select :birthdate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ingreso %>
+    <%= form.date_select :ingreso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :notas %>
+    <%= form.text_area :notas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

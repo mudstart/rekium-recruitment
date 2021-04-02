@@ -1,97 +1,107 @@
-<%= form_with(model: recruitment) do |form| %>
-  <% if recruitment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(recruitment.errors.count, "error") %> prohibited this recruitment from being saved:</h2>
 
-      <ul>
-        <% recruitment.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+  <form>
+    <div class="form-group">
+    <%= form_with(model: recruitment) do |form| %>
+      <% if recruitment.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(recruitment.errors.count, "error") %> prohibited this recruitment from being saved:</h2>
+    
+          <ul>
+            <% recruitment.errors.each do |error| %>
+              <li><%= error.full_message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+  </form>
 
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+  <div class="form-group">
+    <div class="form-row">
+      <div class="col">
+        <%= form.text_field :first_name, class: "form-control", placeholder: "Nombre" %>
+      </div>
+      <div class="col">
+        <%= form.text_field :last_name, class: "form-control col-md-12", placeholder: "Apellido"%>
+      </div>
+    </div>
+  </div>    
+
+  <div class="form-group">
+    <div class="form-row">
+      <div class="col">
+        <%= form.text_field :discordID, class: "form-control col-md-12", placeholder: "Discord" %>
+      </div>
+      <div class="col">
+        <%= form.text_field :status, class: "form-control col-md-12", placeholder: "Status"  %>
+      </div>
+    </div>
+  </div>    
+
+  <div class="form-group">
+    <div class="form-row">
+      <div class="col">            
+        <%= form.text_field :email, class: "form-control col-md-12", placeholder: "name@example.com" %>
+      </div>
+      <div class="col">       
+        <%= form.text_field :phone_number, class: "form-control col-md-12", placeholder: "888-888-8888" %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+  <div class="form-group">
+    <div class="form-row">
+      <div class="col">     
+        <%= form.label :ingreso %>
+        <%= form.date_select :ingreso, class: "input-group date", placeholder: "Ingreso" %>
+      </div>
+      <div class="col">     
+        <%= form.label :birthdate %>
+        <%= form.date_select :birthdate, class: "input-group date", placeholder: "Ingreso" %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :discordID %>
-    <%= form.text_field :discordID %>
+  
+
+
+  <div class="form-group">
+    <div class="form-row">
+      <div class="col">                   
+        <%= form.text_field :country, class: "form-control col-md-12", placeholder: "Nacionalidad" %>
+      </div>
+      <div class="col">                   
+        <%= form.text_area :note, class: "form-control col-md-12", placeholder: "Notas" %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :status %>
-    <%= form.text_field :status %>
+
+  <div class="form-group">
+    <div class="form-row">
+      <div class="col">    
+        <%= form.text_field :alter1, class: "form-control col-md-12", placeholder: "Alter 1" %>
+      </div>
+      <div class="col">    
+        <%= form.text_field :alter2, class: "form-control col-md-12", placeholder: "Alter 2" %>
+      </div>
+      <div class="col">    
+        <%= form.text_field :alter3, class: "form-control col-md-12", placeholder: "Alter 3" %>
+      </div>
+      <div class="col">    
+        <%= form.text_field :alter4, class: "form-control col-md-12", placeholder: "Alter 4" %>
+      </div>
+      <div class="col">    
+        <%= form.text_field :alter5, class: "form-control col-md-12", placeholder: "Alter 5" %>
+      </div>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :ingreso %>
-    <%= form.date_select :ingreso %>
-  </div>
-
-  <div class="field">
-    <%= form.label :birthdate %>
-    <%= form.date_select :birthdate %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phone_number %>
-    <%= form.text_field :phone_number %>
-  </div>
-
-  <div class="field">
-    <%= form.label :country %>
-    <%= form.text_field :country %>
-  </div>
-
-  <div class="field">
-    <%= form.label :alter1 %>
-    <%= form.text_field :alter1 %>
-  </div>
-
-  <div class="field">
-    <%= form.label :alter2 %>
-    <%= form.text_field :alter2 %>
-  </div>
-
-  <div class="field">
-    <%= form.label :alter3 %>
-    <%= form.text_field :alter3 %>
-  </div>
-
-  <div class="field">
-    <%= form.label :alter4 %>
-    <%= form.text_field :alter4 %>
-  </div>
-
-  <div class="field">
-    <%= form.label :alter5 %>
-    <%= form.text_field :alter5 %>
-  </div>
-
-  <div class="field">
+  <div class="custom-file">
     <%= form.label :image %>
     <%= form.text_field :image %>
   </div>
-
-  <div class="field">
-    <%= form.label :note %>
-    <%= form.text_area :note %>
-  </div>
-
   <div class="actions">
-    <%= form.submit %>
+    <button type="submit" class: "btn btn-outline-secondary"><%= form.submit %></button>
   </div>
 <% end %>

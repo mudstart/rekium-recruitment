@@ -1,83 +1,137 @@
 <p id="notice"><%= notice %></p>
 
+
+<div class="form-group">
+  <div class="form-control">  
+    <div class="form-row">
+      <div class="col">
+        <strong>Nombre:</strong>
+        <%= @recruitment.first_name %>
+      </div>
+      <div class="col">   
+        <strong>Apellido:</strong>
+        <%= @recruitment.last_name %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="form-control">  
+    <div class="form-row">
+      <div class="col">
+        <strong>Discord ID:</strong>
+        <%= @recruitment.discordID %>
+      </div>
+      <div class="col">   
+        <strong>Status:</strong>
+        <%= @recruitment.status %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <div class="form-control">  
+    <div class="form-row">
+      <div class="col">
+        <strong>Email:</strong>
+        <%= @recruitment.email %>
+      </div>
+      <div class="col">   
+        <strong>Phone number:</strong>
+        <%= @recruitment.phone_number %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <div class="form-control">  
+    <div class="form-row">
+      <div class="col">
+        <strong>Country:</strong>
+        <%= @recruitment.country %>
+      </div>
+      <div class="col">   
+        <strong>Alter 1:</strong>
+        <%= @recruitment.alter1 %>
+      </div>
+    </div>
+  </div>
+</div>  
+
+
+<div class="form-group">
+  <div class="form-control">  
+    <div class="form-row">
+      <div class="col">
+        <strong>Alter 2:</strong>
+        <%= @recruitment.alter2 %>
+      </div>
+      <div class="col">   
+        <strong>Alter 3:</strong>
+        <%= @recruitment.alter3 %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="form-group">
+  <div class="form-control">  
+    <div class="form-row">
+      <div class="col">
+        <strong>Alter 4:</strong>
+        <%= @recruitment.alter4 %>
+      </div>
+      <div class="col">   
+        <strong>Alter 5:</strong>
+        <%= @recruitment.alter5 %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="form-control">  
+    <div class="form-row">
+      <div class="col">
+        <strong>Ingreso:</strong>
+        <%= @recruitment.ingreso %>
+      </div>
+      <div class="col">   
+        <strong>Birthdate:</strong>
+        <%= @recruitment.birthdate %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="form-group">
+  <div class="form-control">  
+    <div class="form-row">
+      <div class="col">
+        <strong>Image:</strong>
+        <%= @recruitment.image %>
+      </div>
+      <div class="col">   
+        <strong>Note:</strong>
+        <%= @recruitment.note %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <p>
-  <strong>First name:</strong>
-  <%= @recruitment.first_name %>
+  
 </p>
 
 <p>
-  <strong>Last name:</strong>
-  <%= @recruitment.last_name %>
-</p>
-
-<p>
-  <strong>Discordid:</strong>
-  <%= @recruitment.discordID %>
-</p>
-
-<p>
-  <strong>Status:</strong>
-  <%= @recruitment.status %>
-</p>
-
-<p>
-  <strong>Ingreso:</strong>
-  <%= @recruitment.ingreso %>
-</p>
-
-<p>
-  <strong>Birthdate:</strong>
-  <%= @recruitment.birthdate %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @recruitment.email %>
-</p>
-
-<p>
-  <strong>Phone number:</strong>
-  <%= @recruitment.phone_number %>
-</p>
-
-<p>
-  <strong>Country:</strong>
-  <%= @recruitment.country %>
-</p>
-
-<p>
-  <strong>Alter1:</strong>
-  <%= @recruitment.alter1 %>
-</p>
-
-<p>
-  <strong>Alter2:</strong>
-  <%= @recruitment.alter2 %>
-</p>
-
-<p>
-  <strong>Alter3:</strong>
-  <%= @recruitment.alter3 %>
-</p>
-
-<p>
-  <strong>Alter4:</strong>
-  <%= @recruitment.alter4 %>
-</p>
-
-<p>
-  <strong>Alter5:</strong>
-  <%= @recruitment.alter5 %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @recruitment.image %>
-</p>
-
-<p>
-  <strong>Note:</strong>
-  <%= @recruitment.note %>
+  
 </p>
 
 <%= link_to 'Edit', edit_recruitment_path(@recruitment) %> |

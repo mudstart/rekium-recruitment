@@ -2,56 +2,52 @@
 
 <h2>Recruitments</h2>
 
+<div class="table-responsive">
 
-  <table class="table table-responsive-sm table-bordered">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellido</th>
-      <th scope="col">Discord ID</th>
-      <th scope="col">Status</th>
-      <th scope="col">Ingreso</th>
-      <th scope="col">Cumpleaños</th>
-      <th scope="col">Email</th>
-      <th scope="col">Numero Tel</th>
-      <th scope="col">Nacionalidad</th>
-      <th scope="col">Alter 1</th>
-      <th scope="col">Alter 2</th>
-      <th scope="col">Alter 3</th>
-      <th scope="col">Alter 4</th>
-      <th scope="col">Alter 5</th>
-      <th scope="col">Image</th>
-      <th scope="col">Notas</th>
-      <th colspan="1"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @recruitments.each do |recruitment| %>
+  <table class="table table-sm table-bordered">
+    <thead class="thead-dark">
       <tr>
-        <td scope="row"><%= recruitment.first_name %></td>
-        <td scope="row"><%= recruitment.last_name %></td>
-        <td scope="row"><%= recruitment.discordID %></td>
-        <td scope="row"><%= recruitment.status %></td>
-        <td scope="row"><%= recruitment.ingreso %></td>
-        <td scope="row"><%= recruitment.birthdate %></td>
-        <th scope="row"><%= recruitment.email %></td>
-        <th scope="row"><%= recruitment.phone_number %></td>
-        <th scope="row"><%= recruitment.country %></td>
-        <th scope="row"><%= recruitment.alter1 %></td>
-        <th scope="row"><%= recruitment.alter2 %></td>
-        <th scope="row"><%= recruitment.alter3 %></td>
-        <th scope="row"><%= recruitment.alter4 %></td>
-        <th scope="row"><%= recruitment.alter5 %></td>
-        <th scope="row"><%= recruitment.image %></td>
-        <th scope="row"><%= recruitment.note %></td>
-        <td type="button" class="btn btn-primary"><%= link_to 'Show', recruitment %></td>
-        <td type="button" class="btn btn-success"><%= link_to 'Edit', edit_recruitment_path(recruitment) %></td>
-        <td type="button" class="btn btn-danger"><%= link_to 'Destroy', recruitment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Discord ID</th>
+        <th scope="col">Status</th>
+        <th scope="col">Ingreso</th>
+        <th scope="col">Email</th>
+        <th scope="col">Nacionalidad</th>
+        <th scope="col">Alter 1</th>
+        <th scope="col">Alter 2</th>
+        <th scope="col">Alter 3</th>
+        <th scope="col">Alter 4</th>
+        <th scope="col">Alter 5</th>
+        <th scope="col">Notas</th>
+        <th colspan="1"></th>
       </tr>
-    <% end %>
-  </tbody>
+    </thead>
+
+    <tbody>
+      <% @recruitments.each do |recruitment| %>
+        <tr>
+          <td scope="row"><%= recruitment.first_name %></td>
+          <td scope="row"><%= recruitment.last_name %></td>
+          <td scope="row"><%= recruitment.discordID %></td>
+          <td scope="row"><%= recruitment.status %></td>
+          <td scope="row"><%= recruitment.ingreso %></td>
+          <th scope="row"><%= recruitment.email %></td>
+          <th scope="row"><%= recruitment.country %></td>
+          <th scope="row"><%= recruitment.alter1 %></td>
+          <th scope="row"><%= recruitment.alter2 %></td>
+          <th scope="row"><%= recruitment.alter3 %></td>
+          <th scope="row"><%= recruitment.alter4 %></td>
+          <th scope="row"><%= recruitment.alter5 %></td>
+          <th scope="row"><%= recruitment.note %></td>
+          <td type="button" class="btn btn-primary"><%= link_to 'Show', recruitment %></td>
+          <td type="button" class="btn btn-success"><%= link_to 'Edit', edit_recruitment_path(recruitment) %></td>
+          <td type="button" class="btn btn-danger"><%= link_to 'Destroy', recruitment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
   </table>
+</div>
 
   <br>
 
